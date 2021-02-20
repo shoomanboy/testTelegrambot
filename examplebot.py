@@ -4,7 +4,6 @@ from telegram.ext import Updater, Filters, MessageHandler, ConversationHandler, 
 
 def message_handler(bot,update):
     name=bot.message.chat.first_name
-    print(bot.message)
     bot.message.reply_text(text="Привет %s я бот"%name)
     # return ConversationHandler.END
 
